@@ -1,0 +1,9 @@
+python -m pip install --upgrade pip
+python -m venv myvenv 
+myvenv\Scripts\activate #activar entorno virtual
+django.admin.exe startproject mysite . #crear app
+python manage.py migrate 
+python manage.py runserver
+manage.py makemigrations blog
+manage.py migrate blog  
+winget install --id Git.Git -e --source winget #en power shell install git
